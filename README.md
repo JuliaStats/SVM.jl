@@ -29,6 +29,19 @@ An interface to libSVM from Julia
 
     predictions = predict(model, features)
 
+    using RDatasets
+
+    iris = data("datasets", "iris")
+
+    labels = vector(iris["Species"])
+    labels = int(labels .== "setosa")
+
+    features = matrix(iris[:, 2:5])
+
+    model = svm(labels, features)
+    predictions = predict(model, features)
+    mean(predictions .== labels)
+
 # To Do
 
 * Use binary interface to libSVM instead of libSVM text format
