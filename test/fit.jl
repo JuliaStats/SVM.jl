@@ -17,7 +17,7 @@ predictions = predict(model, features)
 
 # Using SVMExample objects
 
-examples = read_svm_data(joinpath("test", "data", "heart.scale"))
+examples = SVM.read_svm_data(joinpath("test", "data", "heart.scale"))
 
 model = svm(examples)
 

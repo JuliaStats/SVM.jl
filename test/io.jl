@@ -7,14 +7,14 @@ altmodelfile = strcat(modelfile, ".alt")
 predictfile = joinpath("test", "data", "heart.scale.predict")
 altpredictfile = strcat(predictfile, ".alt")
 
-d = read_svm_data(datafile)
-write_svm_data(altdatafile, d)
+d = SVM.read_svm_data(datafile)
+SVM.write_svm_data(altdatafile, d)
 # Should we respect ints in data?
 # @assert readall(datafile) == readall(altdatafile)
 rm(altdatafile)
 
-model = read_svm_model(modelfile)
-write_svm_model(altmodelfile, model)
+model = SVM.read_svm_model(modelfile)
+SVM.write_svm_model(altmodelfile, model)
 # Should we respect ints in data?
 # @assert readall(modelfile) == readall(altmodelfile)
 rm(altmodelfile)

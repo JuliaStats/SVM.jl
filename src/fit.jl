@@ -1,5 +1,5 @@
-const TRAINBIN = joinpath(julia_pkgdir(), "SVM", "bin", "svm-train")
-const PREDICTBIN = joinpath(julia_pkgdir(), "SVM", "bin", "svm-predict")
+const TRAINBIN = Pkg.dir("SVM", "bin", "svm-train")
+const PREDICTBIN = Pkg.dir("SVM", "bin", "svm-predict")
 
 function traincall(datafile::String, modelfile::String)
 	run(`$TRAINBIN $datafile $modelfile`)
