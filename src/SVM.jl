@@ -4,8 +4,6 @@ export svm, cddual, pegasos, predict
 
 type SVMFit
 	w::Vector{Float64}
-	preds::Vector{Float64}
-	accuracy::Float64
 	pass::Int
 	converged::Bool
 end
@@ -13,7 +11,6 @@ end
 function Base.show(io::IO, fit::SVMFit)
 	@printf io "Fitted linear SVM\n"
 	@printf io " * Non-zero weights: %d\n" nnz(fit.w)
-	@printf io " * Accuracy: %f\n" fit.accuracy
 	@printf io " * Iterations: %d\n" fit.pass
 	@printf io " * Converged: %s\n" string(fit.converged)
 end
@@ -30,7 +27,6 @@ function predict(fit::SVMFit, X::Matrix)
 	end
 	return preds
 end
-predict(fit::SVMFit) = fit.preds
 
 include("pegasos.jl")
 
