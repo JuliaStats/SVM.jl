@@ -40,11 +40,8 @@ train = randbool(n)
 model = svm(X[:,train], Y[train])
 
 # And now evaluate that model on the testset
-accuracy = nnz(SVM.predict(model, X[:,~train]) .== Y[~train])/nnz(~train)
+accuracy = nnz(predict(model, X[:,~train]) .== Y[~train])/nnz(~train)
 ```
-
-For now, it is necessary to write `SVM.predict` instead of `predict`,
-but we plan to get rid of this minor inconvenience.
 
 You may specify non-default values for the various parameters:
 
