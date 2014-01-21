@@ -1,5 +1,7 @@
 module SVM
 
+import StatsBase.predict
+
 export svm, cddual, pegasos, predict
 
 type SVMFit
