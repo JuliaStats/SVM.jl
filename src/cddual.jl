@@ -78,15 +78,5 @@ function cddual(X::Matrix,
 		end
 	end
 
-	# Assess accuracy on training data
-	preds = Array(Float64, l)
-	correct = 0
-	for i in 1:l
-		preds[i] = sign(dot(w, X[:, i]))
-		if preds[i] * Y[i] > 0
-			correct += 1
-		end
-	end
-
-	return SVMFit(w, preds, correct / l, pass, converged)
+	return SVMFit(w, pass, converged)
 end

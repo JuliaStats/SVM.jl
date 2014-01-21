@@ -65,15 +65,5 @@ function pegasos(X::Matrix,
 		end
 	end
 
-	# Estimate accuracy on training set
-	preds = Array(Float64, n)
-	correct = 0
-	for i in 1:n
-		preds[i] = sign(dot(w, X[:, i]))
-		if preds[i] * Y[i] > 0
-			correct += 1
-		end
-	end
-
-	return SVMFit(w, preds, correct / n, T, true)
+	return SVMFit(w, T, true)
 end

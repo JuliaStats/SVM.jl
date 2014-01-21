@@ -73,14 +73,5 @@ function svm2(X::Matrix, #SparseMatrixCSC,
 		end
 	end
 
-	preds = Array(Float64, length(Y))
-	correct = 0
-	for i in 1:l
-		preds[i] = sign((w'X[:, i])[1])
-		if preds[i] * Y[i] > 0
-			correct += 1
-		end
-	end
-
-	return SVMFit(w, preds, correct / l, pass, converged)
+	return SVMFit(w, pass, converged)
 end
