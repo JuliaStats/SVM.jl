@@ -1,6 +1,12 @@
 SVM.jl
 ======
 
+
+[![Build Status](https://travis-ci.org/JuliaStats/SVM.jl.svg)](https://travis-ci.org/JuliaStats/SVM.jl)
+[![Coverage Status](https://coveralls.io/repos/JuliaStats/SVM.jl/badge.png)](https://coveralls.io/r/JuliaStats/SVM.jl)
+[![Package Evaluator](http://iainnz.github.io/packages.julialang.org/badges/SVM_0.3.svg)](http://iainnz.github.io/packages.julialang.org/?pkg=SVM&ver=0.3)
+
+
 # SVMs in Julia
 
 Native Julia implementations of standard SVM algorithms.
