@@ -1,3 +1,4 @@
+srand(1)
 using SVM
 iris = readcsv(joinpath(dirname(@__FILE__), "iris.csv"))
 X = iris[:, 1:4]'
