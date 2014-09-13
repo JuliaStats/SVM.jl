@@ -4,7 +4,7 @@ SVM.jl
 
 [![Build Status](https://travis-ci.org/JuliaStats/SVM.jl.svg)](https://travis-ci.org/JuliaStats/SVM.jl)
 [![Coverage Status](https://coveralls.io/repos/JuliaStats/SVM.jl/badge.png)](https://coveralls.io/r/JuliaStats/SVM.jl)
-[![Package Evaluator](http://iainnz.github.io/packages.julialang.org/badges/SVM_0.3.svg)](http://iainnz.github.io/packages.julialang.org/?pkg=SVM&ver=0.3)
+[![SVM](http://pkg.julialang.org/badges/SVM_release.svg)](http://pkg.julialang.org/?pkg=SVM&ver=release)
 
 
 # SVMs in Julia
