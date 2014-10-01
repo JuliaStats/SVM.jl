@@ -46,7 +46,7 @@ train = randbool(n)
 model = svm(X[:,train], Y[train])
 
 # And now evaluate that model on the testset
-accuracy = nnz(predict(model, X[:,~train]) .== Y[~train])/nnz(~train)
+accuracy = countnz(predict(model, X[:,~train]) .== Y[~train])/countnz(~train)
 ```
 
 You may specify non-default values for the various parameters:
