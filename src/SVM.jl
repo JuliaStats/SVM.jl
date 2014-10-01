@@ -12,7 +12,7 @@ end
 
 function Base.show(io::IO, fit::SVMFit)
 	@printf io "Fitted linear SVM\n"
-	@printf io " * Non-zero weights: %d\n" nnz(fit.w)
+	@printf io " * Non-zero weights: %d\n" countnz(fit.w)
 	@printf io " * Iterations: %d\n" fit.pass
 	@printf io " * Converged: %s\n" string(fit.converged)
 end
