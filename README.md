@@ -30,14 +30,14 @@ using SVM
 using RDatasets
 
 # We'll learn to separate setosa from other species
-iris = data("datasets", "iris")
+iris = dataset("datasets", "iris")
 
 # SVM format expects observations in columns and features in rows
 X = array(iris[:, 1:4])'
 p, n = size(X)
 
 # SVM format expects positive and negative examples to +1/-1
-Y = [species == "setosa" ? 1.0 : -1.0 for species in iris[:, "Species"]]
+Y = [species == "setosa" ? 1.0 : -1.0 for species in iris[:Species]]
 
 # Select a subset of the data for training, test on the rest.
 train = randbool(n)
