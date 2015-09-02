@@ -2,9 +2,10 @@ SVM.jl
 ======
 
 
-[![Build Status](https://travis-ci.org/JuliaStats/SVM.jl.svg)](https://travis-ci.org/JuliaStats/SVM.jl)
-[![Coverage Status](https://coveralls.io/repos/JuliaStats/SVM.jl/badge.png)](https://coveralls.io/r/JuliaStats/SVM.jl)
-[![SVM](http://pkg.julialang.org/badges/SVM_release.svg)](http://pkg.julialang.org/?pkg=SVM&ver=release)
+[![Build Status](https://travis-ci.org/JuliaStats/SVM.jl.svg?branch=master)](https://travis-ci.org/JuliaStats/SVM.jl)
+[![Coverage Status](https://coveralls.io/repos/JuliaStats/SVM.jl/badge.svg)](https://coveralls.io/r/JuliaStats/SVM.jl)
+[![SVM](http://pkg.julialang.org/badges/SVM_0.3.svg)](http://pkg.julialang.org/?pkg=SVM&ver=0.3)
+[![SVM](http://pkg.julialang.org/badges/SVM_0.4.svg)](http://pkg.julialang.org/?pkg=SVM&ver=0.4)
 
 
 # SVMs in Julia
