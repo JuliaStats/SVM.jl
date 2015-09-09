@@ -1,6 +1,7 @@
 SVM.jl
 ======
 
+# THIS PACKAGE IS UNMAINTAINED AND WILL BE REMOVED FROM METADATA
 
 [![Build Status](https://travis-ci.org/JuliaStats/SVM.jl.svg?branch=master)](https://travis-ci.org/JuliaStats/SVM.jl)
 [![Coverage Status](https://coveralls.io/repos/JuliaStats/SVM.jl/badge.svg)](https://coveralls.io/r/JuliaStats/SVM.jl)
