@@ -3,9 +3,9 @@ SVM.jl
 
 # THIS PACKAGE IS UNMAINTAINED AND WILL BE REMOVED FROM METADATA
 
+[![Project Status: Unsupported - The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.](http://www.repostatus.org/badges/latest/unsupported.svg)](http://www.repostatus.org/#unsupported)
 [![Build Status](https://travis-ci.org/JuliaStats/SVM.jl.svg?branch=master)](https://travis-ci.org/JuliaStats/SVM.jl)
 [![Coverage Status](https://coveralls.io/repos/JuliaStats/SVM.jl/badge.svg)](https://coveralls.io/r/JuliaStats/SVM.jl)
-[![SVM](http://pkg.julialang.org/badges/SVM_0.3.svg)](http://pkg.julialang.org/?pkg=SVM&ver=0.3)
 [![SVM](http://pkg.julialang.org/badges/SVM_0.4.svg)](http://pkg.julialang.org/?pkg=SVM&ver=0.4)
 
 
